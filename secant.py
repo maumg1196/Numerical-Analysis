@@ -1,5 +1,4 @@
 """Secant Method."""
-from sympy import *
 
 
 def secant(f, x0, x1, iteration):
