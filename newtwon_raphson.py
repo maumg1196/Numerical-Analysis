@@ -5,7 +5,7 @@ from sympy import *
 def nwrph(function, prime, x0, iteration):
     """Here is the Newton Raphson Method."""
     for loop in range(iteration):
-        x0 = x0 - (function.evalf(subs={x: x0}) / prime.evalf(subs={x: x0}))
+        x0 -= (function.evalf(subs={x: x0}) / prime.evalf(subs={x: x0}))
     return x0
 
 
